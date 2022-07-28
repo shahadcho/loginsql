@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "699340945516",
+    "project_id": "ksebprojectx",
+    "storage_bucket": "ksebprojectx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699340945516:android:53d969e49775812b290049",
+        "android_client_info": {
+          "package_name": "com.example.loginsql"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699340945516-0ttc48kkfm0m8hcs7env408mvntq1cjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHN8NBelyXOX3ZYCodu7_TyneXTuHJQZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699340945516-0ttc48kkfm0m8hcs7env408mvntq1cjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blubg"
+    tools:context=".CalculatorActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrolls"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart=""
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="50dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:layout_marginLeft="30dp"
+            android:text="Single Phase"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Three Phase"
+            android:textColor="@color/white"
+
+            android:textSize="25dp" />
+
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/c_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Current Unit Reading"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_marginLeft="300dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/c_unit"
+        android:backgroundTint="#555"/>
+    <Button
+        android:id="@+id/btn_detect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c_unit"
+        android:layout_marginLeft="190dp"
+
+
+        android:text="Detect"
+        android:backgroundTint="#555"/>
+
+
+    <EditText
+        android:id="@+id/p_unit"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_scan"
+        android:hint="Enter Previous Unit"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/days"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p_unit"
+        android:layout_marginTop="10dp"
+        android:hint="Number of days from Last Bill"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/days"
+        android:backgroundTint="#555"/>
+
+    <TextView
+        android:id="@+id/used_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_submit"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Used Units :"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/total_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/used_unit"
+        android:layout_marginTop="21dp"
+        android:padding="10dp"
+        android:text="Total Cost :"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/online"
+        android:layout_width="128dp"
+        android:layout_height="113dp"
+        android:layout_below="@id/total_cost"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/payyonline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Online"
+        android:layout_below="@id/online"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
